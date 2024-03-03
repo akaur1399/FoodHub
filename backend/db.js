@@ -1,17 +1,18 @@
 const mongoose = require('mongoose');
 //const mongoURI = 'mongodb://127.0.0.1:27017/FoodHub'
+const cors = require('cors');
 const mongoURI = 'mongodb+srv://sonuamandeep99:Akaur1399@foodhub.obwelvo.mongodb.net/FoodHub?retryWrites=true&w=majority'
 
 
 mongoose.set('strictQuery', true);
 
-/*app.use(cors(
+app.use(cors(
     {
         origin : [],
         methods: ['POST','GET'],
         credentials: true
     }
-));*/
+));
             
 
 const mongoDB = async () => {
