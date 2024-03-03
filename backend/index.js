@@ -9,14 +9,14 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.use((req,res,next)=>{
+/*app.use((req,res,next)=>{
   res.setHeader("Access-Control-Allow-Origin","https://foodie-frontend-tau.vercel.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
   );
   next();
-})
+})*/
 
 app.use(express.json());
 app.use('/api',require("./Routes/CreateUser"));
