@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 })
 
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","https://foodie-api-nu.vercel.app");
+  res.setHeader("Access-Control-Allow-Origin","https://localhost:4000");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"

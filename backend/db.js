@@ -8,7 +8,7 @@ mongoose.set('strictQuery', true);
 
 app.use(cors(
     {
-        origin : ["https://foodie-api-nu.vercel.app"],
+        origin : ["https://foodie-frontend-xi.vercel.app"],
         methods: ['POST','GET'],
         credentials: true
     }
