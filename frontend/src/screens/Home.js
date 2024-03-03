@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
@@ -11,7 +10,7 @@ export default function Home() {
   const [foodItem, setfoodItem] = useState([]);
 
   const loadData = async () => {
-    let response = await axios.post("https://foodie-api-six.vercel.app/api/foodData", {
+    let response = await fetch("https://foodie-api-six.vercel.app/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
