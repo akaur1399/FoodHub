@@ -10,7 +10,7 @@ mongoose.set('strictQuery', true);
 
 app.use(cors(
     {
-        origin : ["https://foodhub-phi.vercel.app"],
+        origin : ["http://foodie-api.vercel.app"],
         methods: ['POST','GET'],
         credentials: true
     }
