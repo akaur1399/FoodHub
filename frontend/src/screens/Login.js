@@ -8,7 +8,7 @@ export default function Login() {
   const handleSubmit = async(e) =>{
       e.preventDefault();
       console.log(JSON.stringify({email:credentials.email,password:credentials.password}))
-      const response = await fetch("https://foodie-api-nu.vercel.app/api/loginuser",{
+      const response = await fetch("https://localhost:3000/api/loginuser",{
           method:'POST',
           headers:{
               'Content-Type':'application/json'
