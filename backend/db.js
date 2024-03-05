@@ -8,13 +8,13 @@ const mongoURI = 'mongodb+srv://sonuamandeep99:Akaur1399@foodhub.obwelvo.mongodb
 const app = express()
 mongoose.set('strictQuery', true);
 
-/*app.use(cors(
+app.use(cors(
     {
-        origin : ["https://foodie-frontend-tau.vercel.app"],
+        origin : ["https://65e727e38eccdc15f447bf0c--poetic-nougat-9729f1.netlify.app"],
         methods: ['POST','GET'],
         credentials: true
     }
-));*/
+));
             
 
 const mongoDB = async () => {
