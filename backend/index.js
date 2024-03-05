@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 4000
+//const port = 4000
 const mongoDB = require("./db")
 mongoDB();
 
@@ -24,7 +24,9 @@ app.use('/api',require("./Routes/DisplayData"));
 app.use('/api',require("./Routes/OrderData"));
 
 
+const PORT = process.env.PORT
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+
+app.listen(PORT, () => {
+  console.log(`Example app listening on port` + PORT)
 })
