@@ -19,9 +19,9 @@ app.use((req,res,next)=>{
 })
 
 app.use(express.json());
-app.use('/api',require("./Routes/CreateUser"));
-app.use('/api',require("./Routes/DisplayData"));
-app.use('/api',require("./Routes/OrderData"));
+app.use('/',require("./Routes/CreateUser"));
+app.use('/',require("./Routes/DisplayData"));
+app.use('/',require("./Routes/OrderData"));
 
 
 const PORT = process.env.PORT
