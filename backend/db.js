@@ -2,19 +2,19 @@ const mongoose = require('mongoose');
 const express = require('express')
 
 //const mongoURI = 'mongodb://127.0.0.1:27017/FoodHub'
-const cors = require('cors');
+//const cors = require('cors');
 const mongoURI = 'mongodb+srv://sonuamandeep99:Akaur1399@foodhub.obwelvo.mongodb.net/FoodHub?retryWrites=true&w=majority'
 
 const app = express()
 mongoose.set('strictQuery', true);
 
-app.use(cors(
+/*app.use(cors(
     {
         origin : ["https://foodie-frontend-tau.vercel.app"],
         methods: ['POST','GET'],
         credentials: true
     }
-));
+));*/
             
 
 const mongoDB = async () => {
