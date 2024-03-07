@@ -11,7 +11,7 @@ mongoose.set('strictQuery', true);
 
 app.use(cors(
     {
-        origin : ["https://65e727e38eccdc15f447bf0c--poetic-nougat-9729f1.netlify.app"],
+        origin : ["https://65e94e8f5a96b3a82bf1c94e--lovely-vacherin-6a1458.netlify.app"],
         methods: ['POST','GET'],
         credentials: true
     }
