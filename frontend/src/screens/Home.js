@@ -11,7 +11,7 @@ export default function Home() {
 
   const loadData = async () => {
     let response = await fetch("https://foodhub-api-3lqo.onrender.com/api/foodData", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       }
