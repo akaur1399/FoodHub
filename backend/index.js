@@ -17,6 +17,7 @@ app.use((req,res,next)=>{
   );
   next();
 })
+//https://65e94e8f5a96b3a82bf1c94e--lovely-vacherin-6a1458.netlify.app
 
 app.use(express.json());
 app.use('/api',require("./Routes/CreateUser"));
